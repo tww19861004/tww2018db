@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{21D50689-95A4-4606-B2EF-F17F27AAE4F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "onlinedb", "ConsoleApp1\onlinedb.csproj", "{21D50689-95A4-4606-B2EF-F17F27AAE4F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
