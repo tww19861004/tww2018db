@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AEF1E20-4D29-4E37-9C2F-73688B88802C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>dbdesign</RootNamespace>
+    <AssemblyName>dbdesign</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\application.css" />
+    <Content Include="dbModel\Application.js" />
+    <Content Include="dbModel\document.js" />
+    <Content Include="dbModel\draw2dTojson.js" />
+    <Content Include="dbModel\TableEditor.js" />
+    <Content Include="dbModel\TableShape.js" />
+    <Content Include="dbModel\Toolbar.js" />
+    <Content Include="dbModel\View.js" />
+    <Content Include="draw2d\canvg.js" />
+    <Content Include="draw2d\Class.js" />
+    <Content Include="draw2d\draw2d.js" />
+    <Content Include="draw2d\json2.js" />
+    <Content Include="draw2d\pathfinding-browser.min.js" />
+    <Content Include="draw2d\raphael.js" />
+    <Content Include="draw2d\rgbcolor.js" />
+    <Content Include="draw2d\shifty.js" />
+    <Content Include="index.html" />
+    <Content Include="jquery\contextmenu.css" />
+    <Content Include="jquery\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="jquery\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="jquery\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="jquery\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="jquery\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="jquery\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jquery\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="jquery\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jquery\images\ui-icons_454545_256x240.png" />
+    <Content Include="jquery\images\ui-icons_888888_256x240.png" />
+    <Content Include="jquery\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jquery\jquery-1.12.0.min.js" />
+    <Content Include="jquery\jquery-touch_punch.js" />
+    <Content Include="jquery\jquery-ui-1.8.23.custom.css" />
+    <Content Include="jquery\jquery-ui-1.8.23.custom.min.js" />
+    <Content Include="jquery\jquery.autoresize.js" />
+    <Content Include="jquery\jquery.browser.js" />
+    <Content Include="jquery\jquery.contextmenu.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
