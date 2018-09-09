@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C566BC42-466B-4EE0-8679-115C4AC62DBE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>wwwsqldesigner</RootNamespace>
+    <AssemblyName>wwwsqldesigner</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="backend\asp-file\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="backend\asp-file\data\default" />
+    <None Include="backend\cf-mysql\index.cfm" />
+    <None Include="backend\perl-file\index.pl" />
+    <None Include="backend\php-file\data\default" />
+    <None Include="backend\php-mysql+file\data\default" />
+    <None Include="backend\php-postgresql\README" />
+    <None Include="backend\php-sqlite\wwwsqldesigner.sqlite" />
+    <None Include="Dockerfile" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitmodules" />
+    <Content Include="backend\asp-file\Default.aspx" />
+    <Content Include="backend\cf-mysql\database.sql" />
+    <Content Include="backend\php-blank\index.php" />
+    <Content Include="backend\php-cubrid\cubrid_mysql_compat.php" />
+    <Content Include="backend\php-cubrid\database.sql" />
+    <Content Include="backend\php-cubrid\index.php" />
+    <Content Include="backend\php-file\index.php" />
+    <Content Include="backend\php-mysql+file\index.php" />
+    <Content Include="backend\php-mysql+file\mysql_import.php" />
+    <Content Include="backend\php-mysql\database.sql" />
+    <Content Include="backend\php-mysql\index.php" />
+    <Content Include="backend\php-pdo\AbstractLayer.php" />
+    <Content Include="backend\php-pdo\index.php" />
+    <Content Include="backend\php-pdo\LayerMYSQL.php" />
+    <Content Include="backend\php-pdo\LayerPGSQL.php" />
+    <Content Include="backend\php-postgresql\database.sql" />
+    <Content Include="backend\php-postgresql\index.php" />
+    <Content Include="backend\php-s3\index.php" />
+    <Content Include="backend\php-sqlite\index.php" />
+    <Content Include="backend\web2py\datatypes.xml" />
+    <Content Include="backend\web2py\output.xsl" />
+    <Content Include="backend\web2py\web2pydesigner.xml" />
+    <Content Include="db\cubrid\datatypes.xml" />
+    <Content Include="db\cubrid\output.xsl" />
+    <Content Include="db\mssql\datatypes.xml" />
+    <Content Include="db\mssql\output.xsl" />
+    <Content Include="db\mysql\datatypes.xml" />
+    <Content Include="db\mysql\output.xsl" />
+    <Content Include="db\oracle\datatypes.xml" />
+    <Content Include="db\oracle\output.xsl" />
+    <Content Include="db\postgresql\datatypes.xml" />
+    <Content Include="db\postgresql\output.xsl" />
+    <Content Include="db\sqlalchemy\datatypes.xml" />
+    <Content Include="db\sqlalchemy\output.xsl" />
+    <Content Include="db\sqlite\datatypes.xml" />
+    <Content Include="db\sqlite\output.xsl" />
+    <Content Include="db\vfp9\datatypes.xml" />
+    <Content Include="db\vfp9\output.xsl" />
+    <Content Include="db\vfp9\readme_vfp9.txt" />
+    <Content Include="db\web2py\datatypes.xml" />
+    <Content Include="db\web2py\output.xsl" />
+    <Content Include="dropbox-oauth-receiver.html" />
+    <Content Include="images\addingKeys.png" />
+    <Content Include="images\back.png" />
+    <Content Include="images\columnDetail.png" />
+    <Content Include="images\constrained.png" />
+    <Content Include="images\down.gif" />
+    <Content Include="images\editTable.png" />
+    <Content Include="images\finalExample.png" />
+    <Content Include="images\ScreenLayout.png" />
+    <Content Include="images\selectedColumn.png" />
+    <Content Include="images\throbber.gif" />
+    <Content Include="images\up.gif" />
+    <Content Include="index.html" />
+    <Content Include="js\config.js" />
+    <Content Include="js\globals.js" />
+    <Content Include="js\io.js" />
+    <Content Include="js\key.js" />
+    <Content Include="js\keymanager.js" />
+    <Content Include="js\map.js" />
+    <Content Include="js\options.js" />
+    <Content Include="js\oz.js" />
+    <Content Include="js\relation.js" />
+    <Content Include="js\row.js" />
+    <Content Include="js\rowmanager.js" />
+    <Content Include="js\rubberband.js" />
+    <Content Include="js\table.js" />
+    <Content Include="js\tablemanager.js" />
+    <Content Include="js\toggle.js" />
+    <Content Include="js\visual.js" />
+    <Content Include="js\window.js" />
+    <Content Include="js\wwwsqldesigner.js" />
+    <Content Include="license.txt" />
+    <Content Include="locale\ar.xml" />
+    <Content Include="locale\cs.xml" />
+    <Content Include="locale\de.xml" />
+    <Content Include="locale\el.xml" />
+    <Content Include="locale\en.xml" />
+    <Content Include="locale\eo.xml" />
+    <Content Include="locale\es.xml" />
+    <Content Include="locale\fr.xml" />
+    <Content Include="locale\hu.xml" />
+    <Content Include="locale\it.xml" />
+    <Content Include="locale\ja.xml" />
+    <Content Include="locale\ko.xml" />
+    <Content Include="locale\nl.xml" />
+    <Content Include="locale\pl.xml" />
+    <Content Include="locale\pt_BR.xml" />
+    <Content Include="locale\ro.xml" />
+    <Content Include="locale\ru.xml" />
+    <Content Include="locale\sv.xml" />
+    <Content Include="locale\zh.xml" />
+    <Content Include="styles\ie6.css" />
+    <Content Include="styles\ie7.css" />
+    <Content Include="styles\print.css" />
+    <Content Include="styles\style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="backend\php-s3\amazon-s3-php\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
